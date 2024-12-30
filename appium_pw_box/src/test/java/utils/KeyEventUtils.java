@@ -18,6 +18,7 @@ public class KeyEventUtils {
 
     public void pressHome() {
         driver.pressKey(new KeyEvent(AndroidKey.HOME));
+        System.out.println("HOME button clicked.");
     }
     public void pressDown() {
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));

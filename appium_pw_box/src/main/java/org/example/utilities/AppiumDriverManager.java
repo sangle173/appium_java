@@ -2,6 +2,7 @@ package org.example.utilities;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
@@ -13,7 +14,8 @@ public class AppiumDriverManager {
             try {
                 DesiredCapabilities caps = new DesiredCapabilities();
                 caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-                caps.setCapability(MobileCapabilityType.DEVICE_NAME, "an4009099402d84501b13");
+//                caps.setCapability(MobileCapabilityType.DEVICE_NAME, "an4009099402d84501b13");
+                caps.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
                 caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 caps.setCapability("appWaitActivity", "*");
                 caps.setCapability("noReset", true);
